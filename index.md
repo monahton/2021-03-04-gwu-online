@@ -340,6 +340,7 @@ of code below the Schedule `<h2>` header below with
 
 <h2 id="schedule">Schedule</h2>
 
+{% comment %}
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
 {% elsif site.carpentry == "dc" %}
@@ -347,7 +348,10 @@ of code below the Schedule `<h2>` header below with
 {% elsif site.carpentry == "lc" %}
 {% include lc/schedule.html %}
 {% endif %}
+{% endcomment %}
 
+
+{% include custom-schedule.html %}
 <hr/>
 
 
